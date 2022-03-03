@@ -7,7 +7,6 @@
 }
 
 .introduction{
-  border: 2px solid green;
   margin:50px;
   display:flex;
   flex-direction:row;
@@ -16,7 +15,6 @@
   font-weight:700;
 }
 .intro-caption{
-  border: 2px solid blue;
   max-width: 300px;
   width: 100%;
   line-height: 22px;
@@ -29,18 +27,14 @@
   font-weight: 400;
 }
 .grid-container{
-  border: 2px solid green;
+  position: relative;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width:85%;
   padding:60px 0;
   margin: 0 auto;
-  row-gap: 100px;
-}
-
-.grid-item{
-  border: 2px solid purple;
+  row-gap: 90px;
 }
 
 #two, #five{
@@ -49,20 +43,21 @@
 
 .card{
   position: relative;
+  width:60%;
   display:inline-block;
+  margin: 0 auto;
 }
 
 .card img{
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
-  height: auto;
 }
 
 .card p{
   position: absolute;
   writing-mode:vertical-lr;
-  top:4px;
-  left: 290px;
+  top:0px;
+  right:-15px;
   font-family: ST Serif;
   font-weight:400;
   text-transform: uppercase;
@@ -91,4 +86,27 @@ footer a{
 footer a:hover{
   color: rgb(174, 41, 41);
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 650px){
+
+  .introduction{
+    flex-direction: column;    
+  }
+  .intro-caption{
+    margin-top:60px;
+  }
+  .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+    width:100%;
+    padding:10px 0;
+
+  }
+    #two, #four, #six{
+      margin-top:70px;
+    }
+
+    #five{
+      margin-top:0;
+    }
 }
