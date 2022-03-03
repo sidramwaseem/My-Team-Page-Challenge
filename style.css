@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.introduction{
+  border: 2px solid green;
+  margin:50px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  font-family: PT Serif, Arial, sans-serif;
+  font-weight:700;
+}
+.intro-caption{
+  border: 2px solid blue;
+  max-width: 300px;
+  width: 100%;
+  line-height: 22px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight:600;
+}
+
+.intro-caption p{
+  padding-top: 10px;
+  font-weight: 400;
+}
+.grid-container{
+  border: 2px solid green;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width:85%;
+  padding:60px 0;
+  margin: 0 auto;
+  row-gap: 100px;
+}
+
+.grid-item{
+  border: 2px solid purple;
+}
+
+#two, #five{
+  margin-top:100px;
+}
+
+.card{
+  position: relative;
+  display:inline-block;
+}
+
+.card img{
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.card p{
+  position: absolute;
+  writing-mode:vertical-lr;
+  top:4px;
+  left: 290px;
+  font-family: ST Serif;
+  font-weight:400;
+  text-transform: uppercase;
+  font-size:12px;
+}
+
+.card h3{
+  margin-top: 5px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight:600;
+}
+
+footer{
+  text-align: center;
+  padding:20px;
+  font-family: Poppins, Arial, Helvetica, 
+  sans-serif;
+  font-weight:600;
+}
+
+footer a{
+  color: #000;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: rgb(174, 41, 41);
+  text-decoration: underline;
+}
